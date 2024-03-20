@@ -5,16 +5,19 @@ import './Spring24.css';
 const Spring24 = () => {
   const [data, setData] = useState([]);
 
+  const publishedSheetUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQ0gavrCqPA0ETtpOgEyTU3HLfK55613PFjzcGEgrvna6O4m42qtGAmfuNECsaUppalDNAj4s55nq9q/pub?output=csv'
+
   useEffect(() => {
     async function fetchData() {
-      const response = await fetch('/data/SampleCompetitionData.csv');
-      const reader = response.body.getReader();
-      const result = await reader.read(); // raw array
-      const decoder = new TextDecoder('utf-8');
-      const csv = decoder.decode(result.value); // the csv text
-      const results = Papa.parse(csv, { header: true }); // object with { data, errors, meta }
-      const rows = results.data; // array of objects
-      setData(rows);
+      try {
+        const response = await fetch(publishedSheetUrl);
+        if (!response.ok) throw new Error('Network response was not ok.');
+        const text = await response.text();
+        const results = Papa.parse(text, { header: true });
+        setData(results.data);
+      } catch (error) {
+        console.error("There was a problem fetching the data: ", error);
+      }
     }
     fetchData();
   }, []);
@@ -39,12 +42,10 @@ const Spring24 = () => {
         </ul>
       <p><b>Metric:</b></p>
         <ul>
-            <li>Accuracy (Please check )</li>
+            <li>Accuracy - Please check the code section in [<a className='weblink' href="https://www.google.com">Code</a>]</li>
+            <li>Inference Time - Please check the code section in [<a className='weblink' href="https://www.google.com">Code</a>]</li>
         </ul>
-
-
-
-
+      <p><b>Submission:</b></p>
       <table>
         <thead>
           <tr>

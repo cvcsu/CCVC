@@ -8,41 +8,66 @@ const teamMembers = [
       name: 'Changsoo Jung',
       role: 'President',
       email: 'Changsoo.Jung@colostate.edu',
-      photoUrl: 'https://via.placeholder.com/150',
+      photoUrl: '/roster/changsoo.jpg',
       personalUrl: 'changsoojung.buzz'
     },
     {
       id: 2,
-      name: 'Jane Smith',
+      name: 'Ethan Seefried',
         role: 'Vice President',
-      email: 'jane.smith@example.com',
+      email: 'ethan.seefried@colostate.edu',
       photoUrl: 'https://via.placeholder.com/150',
-      personalUrl: 'https://example.com/janesmith'
+      personalUrl: 'https://example.com/example'
     },
     {
         id: 3,
-        name: 'Jane Smith',
-        role: 'Vice President',
-        email: 'jane.smith@example.com',
+        name: 'Jack Fitzgerald',
+        role: 'Treasurer',
+        email: 'jack.fitzgerald@colostate.edu',
         photoUrl: 'https://via.placeholder.com/150',
-        personalUrl: 'https://example.com/janesmith'
+        personalUrl: 'https://example.com/example'
     },
     {
         id: 4,
-        name: 'Jane Smith',
-        role: 'Vice President',
-        email: 'jane.smith@example.com',
+        name: 'Mariah Bradford',
+        role: 'Secretary',
+        email: 'mbrad@rams.colostate.edu',
         photoUrl: 'https://via.placeholder.com/150',
-        personalUrl: 'https://example.com/janesmith'
+        personalUrl: 'https://example.com/example'
     },
     {
         id: 5,
-        name: 'Jane Smith',
-        role: 'Vice President',
-        email: 'jane.smith@example.com',
+        name: 'Caspian Siebert',
+        role: 'Membership Coordinator',
+        email: 'caspian.siebert@colostate.edu',
         photoUrl: 'https://via.placeholder.com/150',
-        personalUrl: 'https://example.com/janesmith'
+        personalUrl: 'https://example.com/example'
     },
+    {
+      id: 6,
+      name: 'Videep Venkatesha',
+      role: 'Communication Coordinator ',
+      email: 'videep.venkatesha@colostate.edu',
+      photoUrl: 'https://via.placeholder.com/150',
+      personalUrl: 'https://example.com/example'
+    },
+    {
+      id: 7,
+      name: 'Soumyadip Roy',
+      role: 'Mentor Coordinator',
+      email: 'Soumyadip.Roy@colostate.edu',
+      photoUrl: 'https://via.placeholder.com/150',
+      personalUrl: 'https://example.com/example'
+    },
+    {
+      id: 8,
+      name: 'Iliana Castillon',
+      role: 'Web Coordinator',
+      email: 'ilianaca@rams.colostate.edu',
+      photoUrl: 'https://via.placeholder.com/150',
+      personalUrl: 'https://example.com/example'
+    },
+  
 
     // Add more team members as needed
   ];
@@ -50,19 +75,23 @@ const teamMembers = [
 
 const Roster = () => {
   return (
-    <div className="roster-container">
-      {teamMembers.map(member => (
-        <div key={member.id} className="card">
-          <img src={member.photoUrl} alt={member.name} className="card-img"/>
-          <div className="card-info">
-            <h3>{member.name}</h3>
-            <h4>{member.role}</h4>
-            <p><a href={`mailto:${member.email}`}>{member.email}</a></p>
-            <p><a href={member.personalUrl} target="_blank" rel="noopener noreferrer">{member.personalUrl}</a></p>
+    <div className="container">
+      <h3 className='sectionheader'>Board Members</h3>
+      <div className="roster-container">
+        {teamMembers.map(member => (
+          <div key={member.id} className="card">
+            <img src={member.photoUrl} alt={member.name} className="card-img"/>
+            <div className="card-info">
+              <h3>{member.name}</h3>
+              <h4>{member.role}</h4>
+              <p><a href={`mailto:${member.email}`}>{member.email}</a></p>
+              <p><a href={member.personalUrl} target="_blank" rel="noopener noreferrer">{member.personalUrl}</a></p>
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
+    
   );
 }
 

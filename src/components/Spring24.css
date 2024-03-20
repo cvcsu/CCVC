@@ -5,6 +5,12 @@
     margin: 0 auto;
 }
 
+.weblink {
+    text-decoration: none;
+    color: #329b5a;
+
+}
+
 table {
     width: 100%;
     border-collapse: collapse;

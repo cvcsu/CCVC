@@ -1,25 +1,38 @@
 /* Roster.css */
+.container {
+  padding-top: 50px;
+  width: 600px;
+  margin: 0 auto; /* Center the container */
+}
+
+.sectionheader {
+  font-size: 1.5em; /* Large font size */
+  font-weight: 600; /* Bold text */
+  color: #6c6d6d; /* Dark text color for visibility */
+  margin-top: 50px;
+  text-align: center;
+
+}
+
 .roster-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px; /* Space between cards */
     padding: 20px;
-    padding-top: 100px;
-    width: 600px;
-    margin: 0 auto; /* Center the container */
-  }
+}
   
   .card {
     width: 250px; /* Fixed card width */
     box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Simple shadow for depth */
     border-radius: 10px; /* Rounded corners */
     overflow: hidden; /* Ensure content fits in the border radius */
+    margin: 0 5px;
   }
   
   .card-img {
     width: 100%; /* Make image fill the card */
-    height: 150px; /* Fixed image height */
+    height: 200px; /* Fixed image height */
     object-fit: cover; /* Ensure the image covers the area without distortion */
   }
   
@@ -28,11 +41,13 @@
   }
   
   .card-info h3 {
-    margin-top: 0;
+    margin: 0;
+    color:#424242d3;
   }
 
   .card-info h4 {
-    margin-top: 0;
+    margin: 10px 0;
+    font-size: 0.9rem;
     color: #708078;
   }
   

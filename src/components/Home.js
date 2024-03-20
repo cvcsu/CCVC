@@ -1,32 +1,38 @@
 import React, { useState, useEffect } from 'react';
-import CCVCLogo from '../assets/logo.png';
+import CCVCLogoVideo from '../assets/LogoAniFast3.mp4'; // Update the import to use your .mp4 file
 import './Home.css';
 
 const loveto = ["join AI competitions", "learn about computer vision", "build cool projects"];
 
-const AboutUs = () => {
+const Home = () => {
   const [currentItem, setCurrentItem] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentItem(prevItem => (prevItem + 1) % loveto.length);
-    }, 3000); // Change the item every 5 seconds
+    }, 2000); // Change the item every 3 seconds
 
     return () => clearInterval(interval);
   }, []);
 
   return (
     <div className="home-container">
-      <h1>Club Computer Vision at CSU</h1>
-      <h3>“Prediction is the essence of intelligence” - Yann LeCun</h3>
-      <img src={CCVCLogo} alt="Club Logo" className="home-svg"/>
+      <h1>
+        <span className="highlight">C</span>lub <span className="highlight">C</span>omputer <span className="highlight">V</span>ision at <span className="highlight">C</span>SU
+      </h1>
+      <h3><i>Visionaries beyond Future</i></h3>
+      
+      <video src={CCVCLogoVideo} className="home-svg" autoPlay muted loop playsInline>
+        Your browser does not support the video tag.
+      </video>
+
       <h2 className='h2-text'>Please contact us if you love to</h2>
-      <h2 key={currentItem} className="love-to-item">{loveto[currentItem]}</h2>
+      <h2 key={currentItem} className="love-to-item"><i>{loveto[currentItem]}</i></h2>
       <div className="email-contact">
-        Contact us: <a href="mailto:contact@example.com">computervisioncsu@gmail.com</a>
+        Contact us: <a href="mailto:computervisioncsu@gmail.com">computervisioncsu@gmail.com</a>
       </div>
     </div>
   );
 }
 
-export default AboutUs;
+export default Home;
