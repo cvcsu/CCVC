@@ -1,0 +1,20 @@
+.aboutus-container {
+    width: 600px;
+    margin: 0 auto; /* Center the container */
+    padding: 50px 20px; /* Add some padding */
+    text-align: center; /* Center the text */
+}
+  
+.aboutus-container h1 {
+    padding: 50px;
+}
+  
+.aboutus-container p {
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 1.2rem; /* Adjust font size as needed for readability */
+    line-height: 1.6; /* Increase line height for better readability */
+    margin: 1em 0; /* Add some margin for spacing */
+    font-family: 'Arial', sans-serif; /* Match the font */
+}
+  

@@ -1,0 +1,98 @@
+/* styles.css */
+
+.navigation {
+    position: fixed; /* Fix the navbar at the top of the page */
+    top: 0; /* Align to the top */
+    width: 100%; /* Ensure it spans the full width */
+    background-color: #fff; /* Background color */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional: Adds a shadow for better visibility */
+    z-index: 1000; /* Ensures the navbar is above other content */
+    text-align: center; /* Center the navigation links */
+    padding: 10px 0; /* Add some padding */
+  }
+  
+  .navigation a {
+    text-decoration: none; /* Remove underlines from links */
+    color: #0a6f31; /* Set the font color */
+    font-family: 'Arial', sans-serif; /* Set the font family */
+    font-weight: 600;
+    font-size: 18px; /* Set the font size */
+    padding: 10px 20px; /* Add some padding around the links */
+    margin: 0 0px; /* Add space around the links */
+  }
+  
+  /* Change link colors on hover */
+  .navigation a:hover {
+    color: #dcb115;
+  }
+
+  /* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .navigation a {
+      font-size: 16px; /* Smaller font size */
+      margin: 0 10px; /* Less space around links */
+    }
+  }
+  
+
+
+/* Style the dropdown button to fit into the nav bar */
+.dropbtn {
+    background-color: #fff; /* Match the navbar's background */
+    color: #0a6f31; /* Match the link color */
+    padding: 10px;
+    border: none; /* Remove border */
+    cursor: pointer; /* Change mouse cursor on hover */
+    font-family: 'Arial', sans-serif; /* Match the font */
+    font-weight: 600;
+    font-size: 18px; /* Match the font size */
+  }
+  
+  /* The container div - needed to position the dropdown content */
+  .dropdown {
+    display: inline-block; /* Align with other nav items */
+  }
+  
+  /* Dropdown Content (Hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute; /* Position them below the button */
+    background-color: #f9f9f9; /* Light-grey background */
+    min-width: 140px; /* Minimum width */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Add some shadow */
+    z-index: 1; /* Ensure dropdown is on top */
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: #0a6f31; /* Dark text color for visibility */
+    padding: 12px 0px; /* Some padding */
+    text-decoration: none; /* No underline */
+    display: block; /* Make links take up the full width */
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  /* Show the dropdown content on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #f1f1f1;}
+
+
+
+
+
+
+.home-container {
+    text-align: center; /* Center the text */
+    padding: 50px 20px; /* Add some padding */
+  }
+  
+  .home-container h1 {
+    margin-bottom: 20px; /* Space below the header */
+  }
+  
+  /* Continue with styles for p, images, links, etc., as per your design */
+  

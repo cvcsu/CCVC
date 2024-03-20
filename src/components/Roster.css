@@ -1,0 +1,52 @@
+/* Roster.css */
+.roster-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between cards */
+    padding: 20px;
+    padding-top: 100px;
+    width: 600px;
+    margin: 0 auto; /* Center the container */
+  }
+  
+  .card {
+    width: 250px; /* Fixed card width */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Simple shadow for depth */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Ensure content fits in the border radius */
+  }
+  
+  .card-img {
+    width: 100%; /* Make image fill the card */
+    height: 150px; /* Fixed image height */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+  }
+  
+  .card-info {
+    padding: 15px;
+  }
+  
+  .card-info h3 {
+    margin-top: 0;
+  }
+
+  .card-info h4 {
+    margin-top: 0;
+    color: #708078;
+  }
+  
+  .card-info p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+  }
+  
+  .card-info a {
+    color: #329b5a; /* Example link color */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .card-info a:hover {
+    text-decoration: underline; /* Optional: underline on hover */
+  }
+  

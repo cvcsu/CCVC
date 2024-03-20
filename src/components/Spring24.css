@@ -1,0 +1,36 @@
+/* Spring24.css */
+.competition_info {
+    width: 600px;
+    padding-top: 70px;
+    margin: 0 auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+  
+th, td {
+    border: 1px solid #0a6f31;
+    padding: 8px;
+}
+  
+tr:nth-child(even) {
+    background-color: #d2f4df;
+}
+  
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #0a6f31;
+    color: white;
+}
+
+.update_msg {
+    text-align: center;
+    padding: 20px;
+    font-size: 15px;
+    color: #0a6f31;
+}
+  

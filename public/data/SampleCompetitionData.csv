@@ -1,0 +1,21 @@
+﻿Rank,Team Name,Inference Time,Accuracy
+1,Byte Busters,0.01,98.17%
+2,Neural Knights,0.02,98.10%
+3,Data Dynamos,0.04,94.24%
+4,Quantum Quandaries,0.06,92.87%
+5,Algorithm Avengers,0.08,90.02%
+6,Silicon Savants,0.1,87.19%
+7,Code Crusaders,0.12,86.11%
+8,Machine Mavericks,0.14,86.02%
+9,Tensor Titans,0.16,83.28%
+10,AI Aces,0.18,81.11%
+11,Circuit Synapses,0.2,80.29%
+12,Deep Learning Demons,0.22,79.88%
+13,Synthetic Minds,0.24,79.61%
+14,Bot Brigade,0.26,78.77%
+15,Intelligence Incubators,0.28,74.91%
+16,Virtual Voyagers,0.3,71.33%
+17,Cyborg Cyclones,0.32,70.98%
+18,Program Pioneers,0.34,65.59%
+19,Digital Dreamers,0.36,60.47%
+20,Insight Invaders,0.38,53.14%
