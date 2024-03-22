@@ -1,3 +1,9 @@
+.group_photo {
+    display: flex;
+    justify-content: center;
+    width: 600px;
+}
+
 .aboutus-container {
     width: 600px;
     margin: 0 auto; /* Center the container */
@@ -6,15 +12,37 @@
 }
   
 .aboutus-container h1 {
-    padding: 50px;
+    font-size: 2em; /* Large font size */
+    font-weight: 700; /* Bold text */
+    color: #9e9d9d; /* Dark text color for visibility */
+    -webkit-user-select: none; /* Chrome, Safari, and Opera */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+}
+
+.aboutus-container h2 {
+    font-size: 1.5em; /* Large font size */
+    font-weight: 600; /* Bold text */
+    color: #505050; /* Dark text color for visibility */
+    margin-top: 50px;
+    -webkit-user-select: none; /* Chrome, Safari, and Opera */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+}
+
+.highlight {
+    color: #0a6f31; /* Dark text color for visibility */
 }
   
 .aboutus-container p {
     text-align: justify;
     text-justify: inter-word;
-    font-size: 1.2rem; /* Adjust font size as needed for readability */
+    font-size: 1.1rem; /* Adjust font size as needed for readability */
     line-height: 1.6; /* Increase line height for better readability */
     margin: 1em 0; /* Add some margin for spacing */
     font-family: 'Arial', sans-serif; /* Match the font */
+    color: #6c6d6d;
 }
   

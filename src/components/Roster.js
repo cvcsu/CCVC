@@ -16,7 +16,7 @@ const teamMembers = [
       name: 'Ethan Seefried',
         role: 'Vice President',
       email: 'ethan.seefried@colostate.edu',
-      photoUrl: 'https://via.placeholder.com/150',
+      photoUrl: '/roster/ethan.jpg',
       personalUrl: 'https://example.com/example'
     },
     {
@@ -24,7 +24,7 @@ const teamMembers = [
         name: 'Jack Fitzgerald',
         role: 'Treasurer',
         email: 'jack.fitzgerald@colostate.edu',
-        photoUrl: 'https://via.placeholder.com/150',
+        photoUrl: '/roster/jack.jpg',
         personalUrl: 'https://example.com/example'
     },
     {
@@ -32,7 +32,7 @@ const teamMembers = [
         name: 'Mariah Bradford',
         role: 'Secretary',
         email: 'mbrad@rams.colostate.edu',
-        photoUrl: 'https://via.placeholder.com/150',
+        photoUrl: '/roster/mariah.jpg',
         personalUrl: 'https://example.com/example'
     },
     {
@@ -40,7 +40,7 @@ const teamMembers = [
         name: 'Caspian Siebert',
         role: 'Membership Coordinator',
         email: 'caspian.siebert@colostate.edu',
-        photoUrl: 'https://via.placeholder.com/150',
+        photoUrl: '/roster/caspian.jpg',
         personalUrl: 'https://example.com/example'
     },
     {
@@ -48,7 +48,7 @@ const teamMembers = [
       name: 'Videep Venkatesha',
       role: 'Communication Coordinator ',
       email: 'videep.venkatesha@colostate.edu',
-      photoUrl: 'https://via.placeholder.com/150',
+      photoUrl: '/roster/videep.jpg',
       personalUrl: 'https://example.com/example'
     },
     {
@@ -56,7 +56,7 @@ const teamMembers = [
       name: 'Soumyadip Roy',
       role: 'Mentor Coordinator',
       email: 'Soumyadip.Roy@colostate.edu',
-      photoUrl: 'https://via.placeholder.com/150',
+      photoUrl: '/roster/soumyadip.jpg',
       personalUrl: 'https://example.com/example'
     },
     {
@@ -64,7 +64,7 @@ const teamMembers = [
       name: 'Iliana Castillon',
       role: 'Web Coordinator',
       email: 'ilianaca@rams.colostate.edu',
-      photoUrl: 'https://via.placeholder.com/150',
+      photoUrl: '/roster/iliana.jpg',
       personalUrl: 'https://example.com/example'
     },
   
@@ -80,7 +80,7 @@ const Roster = () => {
       <div className="roster-container">
         {teamMembers.map(member => (
           <div key={member.id} className="card">
-            <img src={member.photoUrl} alt={member.name} className="card-img"/>
+            <img src={`${process.env.PUBLIC_URL}${member.photoUrl}`} alt={member.name} className="card-img"/>
             <div className="card-info">
               <h3>{member.name}</h3>
               <h4>{member.role}</h4>
