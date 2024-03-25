@@ -19,7 +19,7 @@ function App() {
         <div className="dropdown">
           <button className="dropbtn">Competitions</button>
           <div className="dropdown-content">
-            <Link to="/competitions/Spring24">Spring 24</Link>
+            <Link to="/S24_competition">Spring 24</Link>
             {/* <Link to="/competitions/Fall24">Fall 24</Link>
             <Link to="/competitions/Spring25">Spring 25</Link> */}
             {/* Add more semesters as needed */}
