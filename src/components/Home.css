@@ -81,10 +81,13 @@
     transform: translateX(-50%); /* Adjust for the element's width to truly center it */
     padding-bottom: 50px;
     z-index: 100; /* Ensure it's above other content */
-    -webkit-user-select: none; /* Chrome, Safari, and Opera */
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* Internet Explorer/Edge */
-    user-select: none;
+}
+.email-contact span {
+  -webkit-user-select: none; /* Chrome, Safari, and Opera */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+  color: #000;
 }
 
 .email-contact a {

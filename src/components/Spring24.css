@@ -15,6 +15,10 @@ table {
     width: 100%;
     border-collapse: collapse;
 }
+tbody {
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace
+}
   
 th, td {
     border: 1px solid #0a6f31;
@@ -33,10 +37,16 @@ th {
     color: white;
 }
 
-.update_msg {
+.contact_us {
     text-align: center;
     padding: 20px;
     font-size: 15px;
-    color: #0a6f31;
+    color: #616161;
+    padding-bottom: 50px;
+}
+
+.contact_us a {
+    text-decoration: none;
+    color: #329b5a;
 }
   

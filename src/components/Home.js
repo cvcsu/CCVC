@@ -29,7 +29,7 @@ const Home = () => {
       <h2 className='h2-text'>Please contact us if you love to</h2>
       <h2 key={currentItem} className="love-to-item"><i>{loveto[currentItem]}</i></h2>
       <div className="email-contact">
-        Contact us: <a href="mailto:computervisioncsu@gmail.com">computervisioncsu@gmail.com</a>
+        <span className='contact_us'>Contact us:</span> <a href="mailto:computervisionclub.csu@gmail.com">computervisionclub.csu@gmail.com</a>
       </div>
     </div>
   );

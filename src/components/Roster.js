@@ -1,15 +1,15 @@
 import React from 'react';
 import './Roster.css'; // Assuming you have a CSS file for styling
 
-// Sample data structure for the roster
-const teamMembers = [
+// Data structure for the roster
+const boardMembers = [
     {
       id: 1,
       name: 'Changsoo Jung',
       role: 'President',
       email: 'Changsoo.Jung@colostate.edu',
       photoUrl: '/roster/changsoo.jpg',
-      personalUrl: 'changsoojung.buzz'
+      personalUrl: 'https://changsoojung.buzz'
     },
     {
       id: 2,
@@ -17,7 +17,7 @@ const teamMembers = [
         role: 'Vice President',
       email: 'ethan.seefried@colostate.edu',
       photoUrl: '/roster/ethan.jpg',
-      personalUrl: 'https://example.com/example'
+      personalUrl: ''
     },
     {
         id: 3,
@@ -25,7 +25,7 @@ const teamMembers = [
         role: 'Treasurer',
         email: 'jack.fitzgerald@colostate.edu',
         photoUrl: '/roster/jack.jpg',
-        personalUrl: 'https://example.com/example'
+        personalUrl: ''
     },
     {
         id: 4,
@@ -33,7 +33,7 @@ const teamMembers = [
         role: 'Secretary',
         email: 'mbrad@rams.colostate.edu',
         photoUrl: '/roster/mariah.jpg',
-        personalUrl: 'https://example.com/example'
+        personalUrl: 'https://bbykitty.github.io'
     },
     {
         id: 5,
@@ -41,7 +41,7 @@ const teamMembers = [
         role: 'Membership Coordinator',
         email: 'caspian.siebert@colostate.edu',
         photoUrl: '/roster/caspian.jpg',
-        personalUrl: 'https://example.com/example'
+        personalUrl: ''
     },
     {
       id: 6,
@@ -49,7 +49,7 @@ const teamMembers = [
       role: 'Communication Coordinator ',
       email: 'videep.venkatesha@colostate.edu',
       photoUrl: '/roster/videep.jpg',
-      personalUrl: 'https://example.com/example'
+      personalUrl: ''
     },
     {
       id: 7,
@@ -57,7 +57,7 @@ const teamMembers = [
       role: 'Mentor Coordinator',
       email: 'Soumyadip.Roy@colostate.edu',
       photoUrl: '/roster/soumyadip.jpg',
-      personalUrl: 'https://example.com/example'
+      personalUrl: ''
     },
     {
       id: 8,
@@ -65,12 +65,19 @@ const teamMembers = [
       role: 'Web Coordinator',
       email: 'ilianaca@rams.colostate.edu',
       photoUrl: '/roster/iliana.jpg',
-      personalUrl: 'https://example.com/example'
+      personalUrl: ''
     },
-  
-
-    // Add more team members as needed
-  ];
+];
+const advisors = [
+    {
+        id: 1,
+        name: 'Nathaniel Blanchard',
+        role: 'Advisor',
+        email: 'Nathaniel.Blanchard@colostate.edu',
+        photoUrl: '/roster/nathaniel.jpg',
+        personalUrl: ''
+    },
+];
   
 
 const Roster = () => {
@@ -78,7 +85,7 @@ const Roster = () => {
     <div className="container">
       <h3 className='sectionheader'>Board Members</h3>
       <div className="roster-container">
-        {teamMembers.map(member => (
+        {boardMembers.map(member => (
           <div key={member.id} className="card">
             <img src={`${process.env.PUBLIC_URL}${member.photoUrl}`} alt={member.name} className="card-img"/>
             <div className="card-info">
@@ -90,6 +97,20 @@ const Roster = () => {
           </div>
         ))}
       </div>
+      <h3 className='sectionheader'>Advisor</h3>
+      <div className="roster-container">
+        {advisors.map(advisor => (
+          <div key={advisor.id} className="card">
+            <img src={`${process.env.PUBLIC_URL}${advisor.photoUrl}`} alt={advisor.name} className="card-img"/>
+            <div className="card-info">
+              <h3>{advisor.name}</h3>
+              <h4>{advisor.role}</h4>
+              <p><a href={`mailto:${advisor.email}`}>{advisor.email}</a></p>
+              <p><a href={advisor.personalUrl} target="_blank" rel="noopener noreferrer">{advisor.personalUrl}</a></p>
+            </div>
+          </div>
+        ))}
+        </div>
     </div>
     
   );
