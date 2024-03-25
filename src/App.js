@@ -30,8 +30,8 @@ function App() {
         <Route path="/" element={<Home />} /> {/* Route for the Home page */}
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/roster" element={<Roster />} />
-        <Route path="/competitions" element={<Competitions />} />
-        <Route path="/competitions/Spring24" element={<Spring24 />} />
+        <Route path="/S24_competition" element={<Spring24 />} />
+        {/* <Route path="/competitions" element={<Competitions />} /> */}
         {/* <Route path="/competitions/:semester" element={<CompetitionDetail />} /> */}
       </Routes>
     </Router>
