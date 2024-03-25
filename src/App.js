@@ -6,13 +6,12 @@ import Home from "./components/Home";
 import AboutUs from "./components/AboutUs";
 import Roster from "./components/Roster";
 import Competitions from "./components/Competitions";
-// import CompetitionDetail from "./components/CompetitionDetail";
 import Spring24 from "./components/Spring24";
 import "./navStyles.css";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/CCVC">
       <nav className="navigation">
         <Link to="/">Home</Link> | 
         <Link to="/about-us">About Us</Link> | 
