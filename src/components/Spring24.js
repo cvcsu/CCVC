@@ -65,7 +65,7 @@ const Spring24 = () => {
                   ))}
               </ul>
             </li>
-            <li>Download Link: [<a className='weblink' href="https://www.google.com"><b>Download</b></a>]</li>
+            <li>To download our dataset, please copy the text in this link and send it us an email. Ensure to fill in the [DATE] and [YOUR TEAM NAME] placeholders with the relevant details. Then, the download link will be sent: [<a className='weblink' href="https://drive.google.com/file/d/1G8NOLaN6wy_Qo4J6SSX_0DQqNPwdp2sq/view?usp=sharing"><b>Link</b></a>]</li>
         </ul>
       <p><b>Metrics</b></p>
         <ul>
@@ -81,6 +81,7 @@ const Spring24 = () => {
               <li>Click "Save a copy in Drive"</li>
               <li>Open the copied notebook in your Google Cloud Drive</li>
             </ol>
+            <li>Please put downloaded data into Google Drive before running the Colab</li>
         </ul>
       <p><b>Restrictions</b></p>
         <ul>
@@ -101,7 +102,7 @@ const Spring24 = () => {
         </ul>
       <p><b>Submission</b></p>
         <ul>
-            <li>Send your Google Colab notebook link with full names of your team members in our email: <i>computervisionclub.csu@gmail.com</i></li>
+            <li>Share your <b>Google Colab notebook</b> and <b>saved model weights</b> to <i>computervisionclub.csu@gmail.com</i>. Then, send corresponding links with full names of your team members to our email: <i>computervisionclub.csu@gmail.com</i></li>
             <li>Please DO NOT CLEAR results in your notebook</li>
             <li>Deadline: April 28th 11:59:59 PM</li>
         </ul>
