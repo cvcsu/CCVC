@@ -43,7 +43,22 @@ const Spring24 = () => {
     11: 'Guggenheim',
     12: 'Statistics',
     13: 'Weber',
-    14: 'Animal Sciences'
+    14: 'Animal Sciences',
+    15: 'Ammons',
+    16: 'OT',
+    17: 'Chemistry Research',
+    18: 'Danforth Chapel',
+    19: 'Eddy',
+    20: 'Education',
+    21: 'Forestry',
+    22: 'Gibbons',
+    23: 'Glover',
+    24: 'Industrial Science Lab',
+    25: 'Johnson',
+    26: 'Laurel',
+    27: 'NESB',
+    28: 'Shepardson',
+    29: 'Scott Bioengineering',
   };
 
   return (
@@ -95,9 +110,9 @@ const Spring24 = () => {
         </ul>
       <p><b>Winner Prizes</b></p>
         <ul>
-            <li>1st Place: TBD</li>
-            <li>2nd Place: TBD</li>
-            <li>3rd Place: TBD</li>
+            <li>1st Place: Certificates & Trophy</li>
+            <li>2nd Place: Certificates & Trophy</li>
+            <li>3rd Place: Certificates & Trophy</li>
             <li>All awardees are hereby requested to prepare and deliver a presentation, not exceeding ten minutes, outlining their methodologies. This session is scheduled to take place in <b>CSB 305 on Friday, May 3rd, at 3:00 PM</b>.</li>
         </ul>
       <p><b>Submission</b></p>
