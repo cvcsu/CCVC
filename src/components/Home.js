@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import CCVCLogoVideo from '../assets/LogoAniFast3.mp4'; // Update the import to use your .mp4 file
 import './Home.css';
 
-const loveto = ["join AI competitions", "learn about computer vision", "build cool projects"];
+const loveto = ["join AI competitions", "learn about computer vision", "meet your mentor"];
 
 const Home = () => {
   const [currentItem, setCurrentItem] = useState(0);

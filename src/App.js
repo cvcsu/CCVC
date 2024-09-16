@@ -3,8 +3,7 @@ import { HashRouter as Router, Routes, Route, Link } from "react-router-dom"; //
 import Home from "./components/Home";
 import AboutUs from "./components/AboutUs";
 import Roster from "./components/Roster";
-import Competitions from "./components/Competitions";
-import Spring24 from "./components/Spring24";
+import Fall24 from "./components/Fall24";
 import "./navStyles.css";
 
 function App() {
@@ -17,7 +16,7 @@ function App() {
         <div className="dropdown">
           <button className="dropbtn">Competitions</button>
           <div className="dropdown-content">
-            <Link to="/competitions/spring24">Spring 24</Link> {/* Ensure consistency in path naming */}
+            <Link to="/competitions/fall24">Fall 24</Link> {/* Ensure consistency in path naming */}
             {/* Uncomment or add other links as necessary */}
           </div>
         </div>
@@ -26,7 +25,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/roster" element={<Roster />} />
-        <Route path="/competitions/spring24" element={<Spring24 />} /> {/* Adjusted path */}
+        <Route path="/competitions/fall24" element={<Fall24 />} /> {/* Adjusted path */}
         {/* Uncomment or adjust additional routes as necessary */}
       </Routes>
     </Router>

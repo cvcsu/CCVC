@@ -1,7 +1,7 @@
 /* Roster.css */
 .container {
   padding-top: 50px;
-  width: 600px;
+  width: 650px;
   margin: 0 auto; /* Center the container */
 }
 
@@ -23,7 +23,7 @@
 }
   
   .card {
-    width: 250px; /* Fixed card width */
+    width: 280px; /* Fixed card width */
     box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Simple shadow for depth */
     border-radius: 10px; /* Rounded corners */
     overflow: hidden; /* Ensure content fits in the border radius */
@@ -54,6 +54,11 @@
   .card-info p {
     margin: 5px 0;
     font-size: 0.9rem;
+  }
+
+  .card-info span {
+    color: #a18038; /* Example link color */
+    text-decoration: none; /* Remove underline */
   }
   
   .card-info a {

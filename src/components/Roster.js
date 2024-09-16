@@ -9,7 +9,8 @@ const boardMembers = [
       role: 'President',
       email: 'Changsoo.Jung@colostate.edu',
       photoUrl: '/roster/changsoo.jpg',
-      personalUrl: 'https://changsoojung.buzz'
+      personalUrl: 'https://changsoojung.buzz',
+      spetiality: 'Modeling CV Architecture'
     },
     {
       id: 2,
@@ -17,7 +18,8 @@ const boardMembers = [
         role: 'Vice President',
       email: 'ethan.seefried@colostate.edu',
       photoUrl: '/roster/ethan.jpg',
-      personalUrl: ''
+      personalUrl: '',
+      spetiality: ''
     },
     {
         id: 3,
@@ -25,7 +27,8 @@ const boardMembers = [
         role: 'Treasurer',
         email: 'jack.fitzgerald@colostate.edu',
         photoUrl: '/roster/jack.jpg',
-        personalUrl: ''
+        personalUrl: '',
+        spetiality: ''
     },
     {
         id: 4,
@@ -33,39 +36,17 @@ const boardMembers = [
         role: 'Secretary',
         email: 'mbrad@rams.colostate.edu',
         photoUrl: '/roster/mariah.jpg',
-        personalUrl: 'https://bbykitty.github.io'
+        personalUrl: 'https://bbykitty.github.io',
+        spetiality: ''
     },
     {
-        id: 5,
-        name: 'Caspian Siebert',
-        role: 'Membership Coordinator',
-        email: 'caspian.siebert@colostate.edu',
-        photoUrl: '/roster/caspian.jpg',
-        personalUrl: ''
-    },
-    {
-      id: 6,
+      id: 5,
       name: 'Videep Venkatesha',
       role: 'Communication Coordinator ',
       email: 'videep.venkatesha@colostate.edu',
       photoUrl: '/roster/videep.jpg',
-      personalUrl: ''
-    },
-    {
-      id: 7,
-      name: 'Soumyadip Roy',
-      role: 'Mentor Coordinator',
-      email: 'Soumyadip.Roy@colostate.edu',
-      photoUrl: '/roster/soumyadip.jpg',
-      personalUrl: ''
-    },
-    {
-      id: 8,
-      name: 'Iliana Castillon',
-      role: 'Web Coordinator',
-      email: 'ilianaca@rams.colostate.edu',
-      photoUrl: '/roster/iliana.jpg',
-      personalUrl: ''
+      personalUrl: '',
+      spetiality: ''
     },
 ];
 const advisors = [
@@ -93,6 +74,7 @@ const Roster = () => {
               <h4>{member.role}</h4>
               <p><a href={`mailto:${member.email}`}>{member.email}</a></p>
               <p><a href={member.personalUrl} target="_blank" rel="noopener noreferrer">{member.personalUrl}</a></p>
+              <p><span>Spetiality:</span> {member.spetiality}</p>
             </div>
           </div>
         ))}
