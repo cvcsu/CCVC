@@ -19,7 +19,7 @@ const boardMembers = [
       email: 'ethan.seefried@colostate.edu',
       photoUrl: '/roster/ethan.jpg',
       personalUrl: '',
-      spetiality: ''
+      spetiality: 'Dataset Curation'
     },
     {
         id: 3,
@@ -28,7 +28,7 @@ const boardMembers = [
         email: 'jack.fitzgerald@colostate.edu',
         photoUrl: '/roster/jack.jpg',
         personalUrl: '',
-        spetiality: ''
+        spetiality: 'Utilizing CV and ML in Remote Sensing Applications'
     },
     {
         id: 4,
@@ -37,7 +37,7 @@ const boardMembers = [
         email: 'mbrad@rams.colostate.edu',
         photoUrl: '/roster/mariah.jpg',
         personalUrl: 'https://bbykitty.github.io',
-        spetiality: ''
+        spetiality: 'Human-centered AI and Multimodal Learning'
     },
     {
       id: 5,
@@ -46,7 +46,7 @@ const boardMembers = [
       email: 'videep.venkatesha@colostate.edu',
       photoUrl: '/roster/videep.jpg',
       personalUrl: '',
-      spetiality: ''
+      spetiality: 'NLP and Cognitive Modeling'
     },
 ];
 const advisors = [
