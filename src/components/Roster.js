@@ -10,7 +10,7 @@ const boardMembers = [
       email: 'Changsoo.Jung@colostate.edu',
       photoUrl: '/roster/changsoo.jpg',
       personalUrl: 'https://changsoojung.buzz',
-      spetiality: 'Modeling CV Architecture'
+      speciality: 'Modeling CV Architecture'
     },
     {
       id: 2,
@@ -19,7 +19,7 @@ const boardMembers = [
       email: 'ethan.seefried@colostate.edu',
       photoUrl: '/roster/ethan.jpg',
       personalUrl: '',
-      spetiality: 'Dataset Curation'
+      speciality: 'Dataset Curation'
     },
     {
         id: 3,
@@ -28,7 +28,7 @@ const boardMembers = [
         email: 'jack.fitzgerald@colostate.edu',
         photoUrl: '/roster/jack.jpg',
         personalUrl: '',
-        spetiality: 'Utilizing CV and ML in Remote Sensing Applications'
+        speciality: 'Utilizing CV and ML in Remote Sensing Applications'
     },
     {
         id: 4,
@@ -37,7 +37,7 @@ const boardMembers = [
         email: 'mbrad@rams.colostate.edu',
         photoUrl: '/roster/mariah.jpg',
         personalUrl: 'https://bbykitty.github.io',
-        spetiality: 'Human-centered AI and Multimodal Learning'
+        speciality: 'Human-centered AI and Multimodal Learning'
     },
     {
       id: 5,
@@ -46,7 +46,7 @@ const boardMembers = [
       email: 'videep.venkatesha@colostate.edu',
       photoUrl: '/roster/videep.jpg',
       personalUrl: '',
-      spetiality: 'NLP and Cognitive Modeling'
+      speciality: 'NLP and Cognitive Modeling'
     },
 ];
 const advisors = [
@@ -74,7 +74,7 @@ const Roster = () => {
               <h4>{member.role}</h4>
               <p><a href={`mailto:${member.email}`}>{member.email}</a></p>
               <p><a href={member.personalUrl} target="_blank" rel="noopener noreferrer">{member.personalUrl}</a></p>
-              <p><span>Spetiality:</span> {member.spetiality}</p>
+              <p><span>Speciality:</span> {member.speciality}</p>
             </div>
           </div>
         ))}
