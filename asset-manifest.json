@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/CCVC/static/css/main.d6d44d89.css",
-    "main.js": "/CCVC/static/js/main.5ac50ac0.js",
+    "main.css": "/CCVC/static/css/main.024056b7.css",
+    "main.js": "/CCVC/static/js/main.ec59155b.js",
     "static/js/453.24077919.chunk.js": "/CCVC/static/js/453.24077919.chunk.js",
     "static/media/LogoAniFast3.mp4": "/CCVC/static/media/LogoAniFast3.9a28debf7a10d95a6574.mp4",
     "index.html": "/CCVC/index.html",
-    "main.d6d44d89.css.map": "/CCVC/static/css/main.d6d44d89.css.map",
-    "main.5ac50ac0.js.map": "/CCVC/static/js/main.5ac50ac0.js.map",
+    "main.024056b7.css.map": "/CCVC/static/css/main.024056b7.css.map",
+    "main.ec59155b.js.map": "/CCVC/static/js/main.ec59155b.js.map",
     "453.24077919.chunk.js.map": "/CCVC/static/js/453.24077919.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d6d44d89.css",
-    "static/js/main.5ac50ac0.js"
+    "static/css/main.024056b7.css",
+    "static/js/main.ec59155b.js"
   ]
 }
