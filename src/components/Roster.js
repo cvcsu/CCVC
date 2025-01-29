@@ -4,18 +4,9 @@ import './Roster.css'; // Assuming you have a CSS file for styling
 // Data structure for the roster
 const boardMembers = [
     {
-      id: 1,
-      name: 'Changsoo Jung',
-      role: 'President',
-      email: 'Changsoo.Jung@colostate.edu',
-      photoUrl: '/roster/changsoo.jpg',
-      personalUrl: 'https://changsoojung.buzz',
-      speciality: 'Modeling CV Architecture'
-    },
-    {
       id: 2,
       name: 'Ethan Seefried',
-        role: 'Vice President',
+        role: 'President',
       email: 'ethan.seefried@colostate.edu',
       photoUrl: '/roster/ethan.jpg',
       personalUrl: '',
@@ -24,11 +15,20 @@ const boardMembers = [
     {
         id: 3,
         name: 'Jack Fitzgerald',
-        role: 'Treasurer',
+        role: 'Vice President & Treasurer',
         email: 'jack.fitzgerald@colostate.edu',
         photoUrl: '/roster/jack.jpg',
         personalUrl: '',
         speciality: 'Utilizing CV and ML in Remote Sensing Applications'
+    },
+    {
+      id: 4,
+      name: 'Caleb Christian',
+      role: 'Treasurer',
+      email: 'caleb@colostate.edu',
+      photoUrl: '/roster/caleb.jpg',
+      personalUrl: '',
+      speciality: 'Utilizing CV and ML in Remote Sensing Applications'
     },
     {
         id: 4,
@@ -47,6 +47,15 @@ const boardMembers = [
       photoUrl: '/roster/videep.jpg',
       personalUrl: '',
       speciality: 'NLP and Cognitive Modeling'
+    },
+    {
+      id: 1,
+      name: 'Changsoo Jung',
+      role: 'Mentor',
+      email: 'Changsoo.Jung@colostate.edu',
+      photoUrl: '/roster/changsoo.jpg',
+      personalUrl: 'https://changsoojung.buzz',
+      speciality: 'Modeling CV Architecture'
     },
 ];
 const advisors = [

@@ -56,4 +56,12 @@ th {
     text-decoration: none;
     color: #329b5a;
 }
-  
+
+.center {
+    text-align: center;
+}
+
+img .photo {
+    /* border-radius: 8px; */
+    top: 20px;
+}
